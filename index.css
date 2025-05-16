@@ -1,0 +1,170 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #ffffff;
+    color: #333;
+  }
+  
+  header {
+    background-color: transparent;
+    text-align: center;
+    padding: 0;
+    border-bottom: none;
+    position: relative;
+    overflow: hidden;
+    height: 180px; 
+  }
+  
+  .header-img,
+  .header-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  
+  .tarjetas-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    gap: 40px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .tarjeta-contenedor {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 30px;
+    position: relative;
+  }
+  
+  .tarjeta-contenedor.reverse {
+    flex-direction: row-reverse;
+  }
+  
+  .tarjeta {
+    flex: 1 1 60%;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.08);
+    padding: 25px 30px;
+    border-left: 10px solid transparent;
+    transition: transform 0.3s ease;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .tarjeta:hover {
+    transform: translateY(-5px);
+  }
+  
+  .contenido-texto h2 {
+    margin-top: 0;
+    font-size: 26px;
+    color: #444;
+  }
+  
+  .contenido-texto p,
+  .contenido-texto ul {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 10px;
+    margin-bottom: 0;
+    color: #555;
+  }
+  
+  .contenido-texto ul {
+    padding-left: 20px;
+  }
+  
+  .contenido-texto li {
+    margin-bottom: 8px;
+  }
+  
+  .contenido-imagen {
+    flex: 0 0 30%;
+    max-width: 200px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    object-fit: contain;
+    transition: transform 0.3s ease;
+  }
+  
+  .contenido-imagen.left {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+  .contenido-imagen.right {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+  .tarjeta-contenedor:hover .contenido-imagen {
+    transform: scale(1.05);
+  }
+  
+  .perfil {
+    border-left-color: #f8c8dc;
+    background-color: #fef0f5;
+  }
+  
+  .formacion {
+    border-left-color: #fff4b2;
+    background-color: #fffce2;
+  }
+  
+  .experiencia {
+    border-left-color: #d4f4dd;
+    background-color: #edfff2;
+  }
+  
+  .proyectos {
+    border-left-color: #cceeff;
+    background-color: #e8faff;
+  }
+  
+  .cursos {
+    border-left-color: #ffedb6;
+    background-color: #fff9e6;
+  }
+  
+  .idiomas {
+    border-left-color: #b6e6ff;
+    background-color: #e6f7ff;
+  }
+  
+  .competencias {
+    border-left-color: #ffd6ec;
+    background-color: #fff0f7;
+  }
+  
+  @media (max-width: 768px) {
+    .tarjeta-contenedor,
+    .tarjeta-contenedor.reverse {
+      flex-direction: column;
+      gap: 10px;
+      align-items: center; 
+    }
+  
+    .contenido-imagen {
+      max-width: 250px;
+      width: 100%;
+      margin: 10px 0 0 0; 
+      order: 2;
+      border-radius: 15px;
+      align-self: center;  
+      display: block;
+    }
+  
+    .tarjeta {
+      flex: none;
+      width: 100%;
+      order: 1;
+    }
+  }
+  
